@@ -1,0 +1,171 @@
+Day 1 : 5th June 2023
+
+# How to become Fullstack Developer?
+ans. 
+
+1. Frontend [website] : HTML, CSS, JavaScript, BootStrap, Angular, React
+
+2. Backend [web app/enterprise] : Java, Python, .NET, PHP, Node JS
+
+3. Databases : Oracle, Mysql, Mongo DB, Posgress SQL
+
+4. Software Development Tools/ Real time tools
+	- GIT, Maven, Gradle , Junit, Mockito, Swagger, Code Review tools,  SonarQube , Vera code, Linux, Docker, Keburnetis.
+
+
+5. Cloud - AWS, GCP, Azure, Oracle Cloud, HP cloud, Digital Occean, AliBaba cloud... 
+
+
+------------------------------------------------------------------------------------------------------------
+MEAN : Mongo DB, Express JS, Angular, NodeJS
+MERN : MongoDB, Express JS, React, Node JS
+
+------------------------------------------------------------------------------------------------------------------------------
+
+# How to become Fullstack Java Developer?
+ans. 
+
+1. Frontend : HTML, CSS, JavaScript, BootStrap, Angular, React
+
+2. Backend : Java [ Core Java, Advance Java[JDBC, Servlet, JSP, MVC], Hibernate, Spring[Core, MVC, AOP, REST, Data JPA, Security..], Spring Boot]
+
+3. Databases : Oracle, Mysql, Mongo DB, Posgress SQL
+
+4. Software Development Tools/ Real time tools
+	- GIT, Maven, Gradle , Junit, Mockito, Swagger, Code Review tools,  SonarQube , Vera code, Linux, Docker, Keburnetis.
+
+5. Cloud - AWS, GCP, Azure, Oracle Cloud, HP cloud, Digital Occean, AliBaba cloud... 
+
+
+
+
+Java Backend Engineer: 300+ hours
+1. Core Java - 1 mini project
+2. Advance Java - JDBC Servlet, JSP, MVC, SQL, Maven, HTML [1 Mini Project]
+3. Hibernate - Mini Project
+4. Spring[Core, MVC, AOP, JDBC, REST, Data JPA, Security..]
+5. Spring Boot - 1 mini, 1 major Project
+
+----------------------------------------------------------------------
+
+# Program : instructions given to the computer to perform certain task.
+# Software : set of prorgrams
+# Application/App : 
+# coding : writing instructions
+# programming : writing instructions
+# Programming languange : which is used write program
+	# Programmer
+	# Software Developer
+	# Software Engineer
+	# Software Development Engineer
+
+# Types of Softwares
+1. System software
+2. Application Softwares
+	1. Desktop / standalone application - local computer
+	2. web application - single remote machine / single server machine
+	3. distributed application / enterprise - these are running on multiple machines.
+
+# Java : programming language
+using Java we can develop application softwares.
+	1. desktop [ AWT/Swing ---> JavaFX ]
+	2. web app [ Servlet, JSP --->JSF, Struts --->  Spring MVC, Spring Boot  ]
+	3. distributed app [ SOAP, Spring REST , Web services ]
+
+
+*** Web site vs Web app vs Web services
+
+------------------------------------------------------------------------------------------------------
+
+Day 2 : 6th June 2023
+
+# Why Java as a Career:
+
+1. Wide Adoption: 
+
+2. Versatility: 
+
+3. Object-Oriented Programming (OOP): 
+
+4. Job Opportunities: 
+
+5. Community and Support: 
+
+6. Strong Foundation for Learning Other Languages: 
+
+
+# Java compared with other programming languages:
+1. Simple programming language:
+2. Platform Independent programming language
+	- Platform: anything which lets us run the program.
+	- C, C++ are platform dependent programming languages as C program compiled on one machine cannot run on other platrom.
+
+	- Java is platform indepdent programming language. How?
+	- WORA [Write Once Run Anywhere]
+	- Java compiled code on one machine can be run on any other machine[platform.]
+
+-------------------------------------------------------------------------------------------------
+
+Day 3 : 7th June 2023
+
+- introduction to class and object
+
+--------------------------------------------------------------------------------------------------
+
+Day 4 : 8th June 2023
+
+- To compile java file : javac FileName.java
+- To run/execute the java program: java ClassName
+
+
+
+# Steps to develop first java application.
+1. Download and install JDK from oracle.com
+2. Set the path : C:\Program Files (x86)\Java\jdk-1.8\bin in environment variables.
+3. Write java program with the help of notepad and save it with .java extension.
+4. Compile the java file using java compiler. 
+	 -By using command promt we give command : javac FileName.java
+5. Run the java program
+	- By using commandd promt we give command : java ClassName
+
+
+
+Java Path: It is the location of the executable files which are needed to develop java application.
+
+Command Prompt: It is tool using which we can give commands to the OS.
+
+Envrionment variable : it is the location which contains the location of different commands by OS.
+
+Sample program:
+
+public class HelloWorld {
+
+	public static void main(String[] args){
+		
+		System.out.println("Hello World!");
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
