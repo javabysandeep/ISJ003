@@ -32,7 +32,7 @@ public class ShortHandOperator {
 		e = e % 7 ; //2
 		e %=7; //2		
 		
-	System.out.println(e);//2
+		System.out.println(e);//2
 	}
 		
 }
