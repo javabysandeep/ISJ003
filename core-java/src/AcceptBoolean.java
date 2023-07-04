@@ -5,6 +5,7 @@ public class AcceptBoolean {
         System.out.println("Enter a boolean value");
         Scanner scanner = new Scanner(System.in);
         boolean booleanValue = scanner.nextBoolean();
+        boolean b = 10 > 5;
         System.out.println("you have entered " + booleanValue);
     }
 }
