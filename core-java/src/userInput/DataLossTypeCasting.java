@@ -1,3 +1,5 @@
+package userInput;
+
 public class DataLossTypeCasting {
     public static void main(String[] args) {
         short shortValue = 257;

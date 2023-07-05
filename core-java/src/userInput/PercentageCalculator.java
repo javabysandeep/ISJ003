@@ -1,3 +1,5 @@
+package userInput;
+
 public class PercentageCalculator {
     public static void main(String[] args) {
         int subject1 = 60;

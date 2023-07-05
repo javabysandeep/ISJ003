@@ -1,3 +1,5 @@
+package userInput;
+
 public class IsAlphabet {
     public static void main(String[] args) {
         char ch = 'z';

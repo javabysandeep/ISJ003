@@ -1,3 +1,5 @@
+package userInput;
+
 import java.util.Scanner;
 
 public class AcceptBoolean {
