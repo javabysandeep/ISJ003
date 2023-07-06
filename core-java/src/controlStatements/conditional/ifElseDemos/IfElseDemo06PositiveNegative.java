@@ -1,4 +1,4 @@
-package controlStatements.conditional;
+package controlStatements.conditional.ifElseDemos;
 
 public class IfElseDemo06PositiveNegative {
     public static void main(String[] args) {
