@@ -1,4 +1,4 @@
-package classComponents;
+package classComponents.variables;
 
 public class Student {
     int id;//instance primitive

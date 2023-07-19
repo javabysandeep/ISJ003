@@ -1,4 +1,4 @@
-package classComponents;
+package classComponents.variables;
 
 public class LocalVariable {
     int a = 100; // instance primitive variable

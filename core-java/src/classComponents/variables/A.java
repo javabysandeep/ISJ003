@@ -1,4 +1,4 @@
-package classComponents;
+package classComponents.variables;
 
 public class A {
     int instanceVariable = 1;

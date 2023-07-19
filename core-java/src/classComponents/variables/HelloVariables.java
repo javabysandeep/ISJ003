@@ -1,4 +1,4 @@
-package classComponents;
+package classComponents.variables;
 
 import java.util.Arrays;
 
