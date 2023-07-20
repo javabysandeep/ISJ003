@@ -22,6 +22,6 @@ public class Student {
     }
 
     public static void main(String[] args) {
-        System.out.println(add(100,200));//method call
+        System.out.println(add(100,200));//method cal
     }
 }
