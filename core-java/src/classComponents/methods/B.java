@@ -1,38 +1,23 @@
 public class B {
 
-	int a;
-	int b;
-	int c;
+	void m1(){
+		System.out.println("B class - m1 method");
+		A.display();
+		A.main(null);
 
-	public B(){
+		A a = new A();
+		a.m1();
+		a.m2();
 		
-		System.out.println("Its a zero parameterized constructor");
-		this(100,200,300);
-		
-	}
-
-	public B(int a1, int b1, int c1){
-
-		System.out.println("Its a three parameterized constructor");
-		a = a1;
-		b = b1;
-		c = c1;	
 		
 	}
 
-
-	public static void main(String[] args){
-
-		System.out.println("main method");
-
-		B ref = new B();
-	
-		System.out.println(ref.a + "\t"+ ref.b +"\t"+ ref.c);
-		
-
-
+	public static void main(String[] args){		
+		B b = new B();
+		b.m1();
 	}
 
 	
+
 
 }
