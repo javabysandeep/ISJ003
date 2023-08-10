@@ -1,4 +1,4 @@
-package oops.p1;
+package oops.accessSpecifiers.p1;
 
 public class A {
     private int a = 100;

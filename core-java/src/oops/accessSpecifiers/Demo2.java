@@ -1,4 +1,4 @@
-package oops;
+package oops.accessSpecifiers;
 
 public class Demo2 {
     private static int m = 299;

@@ -1,6 +1,6 @@
-package oops.p2;
+package oops.accessSpecifiers.p2;
 
-import oops.p1.A;
+import oops.accessSpecifiers.p1.A;
 
 public class B {
     public static void main(String[] args) {

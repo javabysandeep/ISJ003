@@ -1,4 +1,4 @@
-package oops;
+package oops.accessSpecifiers;
 
 public class Outer {
     private int a = 100;
