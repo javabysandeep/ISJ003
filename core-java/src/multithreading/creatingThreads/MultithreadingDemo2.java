@@ -1,4 +1,4 @@
-package multithreading;
+package multithreading.creatingThreads;
 
 public class MultithreadingDemo2 {
     static long sum = 0l;

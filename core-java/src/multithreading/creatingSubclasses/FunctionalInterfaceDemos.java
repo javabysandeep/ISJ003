@@ -1,4 +1,4 @@
-package multithreading;
+package multithreading.creatingSubclasses;
 
 public class FunctionalInterfaceDemos {
     public static void main(String[] args) {

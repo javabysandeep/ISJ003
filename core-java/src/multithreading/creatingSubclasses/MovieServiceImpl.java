@@ -1,4 +1,4 @@
-package multithreading;
+package multithreading.creatingSubclasses;
 
 public class MovieServiceImpl implements MovieService {
     @Override

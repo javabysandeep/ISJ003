@@ -1,4 +1,4 @@
-package multithreading;
+package multithreading.creatingSubclasses;
 
 public class LocalInnerClass {
     public static void main(String[] args) {
