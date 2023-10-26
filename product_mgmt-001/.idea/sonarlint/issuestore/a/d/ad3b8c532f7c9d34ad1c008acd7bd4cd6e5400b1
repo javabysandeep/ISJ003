@@ -1,0 +1,15 @@
+
+{
+java:S2293,"YReplace the type specification in this constructor call with the diamond operator ("<>").(²¹ó÷şÿÿÿÿ8¶±Ÿˆµ1
+i
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ8‘ÔŸˆµ1
+i
+java:S2095/"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ8ê±Ÿˆµ1
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æÕÔ¼8í±Ÿˆµ1
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ì¢8î±Ÿˆµ1
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æƒ¼è8ğ±Ÿˆµ1
+L	java:S106&"+Replace this use of System.out by a logger.(­¼ÂÙúÿÿÿÿ8‚²Ÿˆµ1
+L	java:S106:"+Replace this use of System.out by a logger.(­¼ÂÙúÿÿÿÿ8²Ÿˆµ1
