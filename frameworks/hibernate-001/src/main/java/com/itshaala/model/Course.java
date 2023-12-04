@@ -3,7 +3,9 @@ package com.itshaala.model;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Data
+
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
