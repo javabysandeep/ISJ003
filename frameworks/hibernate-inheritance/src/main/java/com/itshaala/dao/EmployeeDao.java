@@ -6,6 +6,9 @@ import com.itshaala.model.Employee;
 import com.itshaala.model.FullTimeEmployee;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
+
+import java.util.List;
 
 public class EmployeeDao {
     static public void addEmployee(Employee employee) {
@@ -14,6 +17,13 @@ public class EmployeeDao {
         session.save(employee);
         transaction.commit();
         System.out.println("Employee Added Successfully");
+    }
+
+    static public List<Employee> getAllEmployees() {
+        Session session = HibernateConfigurationUtil.getSessionFactory().openSession();
+        Query query = session.createQuery("from employee ");
+        List<Employee> employeeList = query.list();
+        return employeeList;
     }
 
     public static void main(String[] args) {
@@ -29,11 +39,14 @@ public class EmployeeDao {
         employee.setEmployeeAddress("Pune");
         employee.setSalary(10000);*/
 
-        ContractEmployee employee = new ContractEmployee();
+        /*ContractEmployee employee = new ContractEmployee();
         employee.setEmployeeId(2);
         employee.setEmployeeName("Gaurav");
         employee.setEmployeeAddress("Uganda");
         employee.setBillAmount(10000);
-        addEmployee(employee);
+        addEmployee(employee);*/
+
+        List<Employee> employeeList = getAllEmployees();
+        employeeList.forEach(System.out::println);
     }
 }

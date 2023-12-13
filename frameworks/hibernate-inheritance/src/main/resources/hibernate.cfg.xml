@@ -13,5 +13,6 @@
         <mapping class="com.itshaala.model.Employee"/>
         <mapping class="com.itshaala.model.FullTimeEmployee"/>
         <mapping class="com.itshaala.model.ContractEmployee"/>
+        <mapping class="com.itshaala.model.Course"/>
     </session-factory>
 </hibernate-configuration>
