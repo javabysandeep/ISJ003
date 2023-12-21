@@ -3,12 +3,13 @@ package com.itshaala.dao;
 import com.itshaala.model.Course;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementSetter;
+import org.springframework.jdbc.core.ResultSetExtractor;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.List;
 
 @Repository
 public class CourseDao {
@@ -20,8 +21,51 @@ public class CourseDao {
         saveDataUsingSpringJdbc(course);
     }
 
-    private void saveDataUsingSpringJdbc(Course course) {
-        jdbcTemplate.update("");
+    public void updateCourse(Course course) {
+        String sql = "update course set course_name=?, price=? where id=?";
+        jdbcTemplate.update(sql, (ps) -> {
+            ps.setString(1, course.getCourseName());
+            ps.setInt(2, course.getCoursePrice());
+            ps.setInt(3, course.getCourseId());
+        });
+    }
+
+    public void deleteCourseById(int courseId) {
+        String sql = "delete from course where id=?";
+        jdbcTemplate.update(sql, (ps) -> {
+            ps.setInt(1, courseId);
+        });
+    }
+
+    public List<Course> getAllCourses() {
+        String sql = "select * from course";
+        List<Course> courseList = jdbcTemplate.query(sql, (rs, rowNum) -> Course.builder()
+                .courseId(rs.getInt("id"))
+                .courseName(rs.getString("course_name"))
+                .coursePrice(rs.getInt("price"))
+                .build());
+        return courseList;
+    }
+
+    public Course getCourseById(int courseId) {
+        String sql = "select * from course where id=" + courseId;
+        RowMapper<Course> rowMapper = (rs, rowNum) ->
+                Course.builder()
+                        .courseId(rs.getInt("id"))
+                        .courseName(rs.getString("course_name"))
+                        .coursePrice(rs.getInt("price"))
+                        .build();
+        Course course = jdbcTemplate.queryForObject(sql, rowMapper);
+        return course;
+    }
+
+    private void saveDataUsingSpringJdbc(final Course course) {
+        String sql = "insert into course(id,course_name,price) values(?,?,?)";
+        jdbcTemplate.update(sql, (preparedStatement) -> {
+            preparedStatement.setInt(1, course.getCourseId());
+            preparedStatement.setString(2, course.getCourseName());
+            preparedStatement.setInt(3, course.getCoursePrice());
+        });
     }
 
     private void saveDataUsingTraditinalJdbc(Course course) {

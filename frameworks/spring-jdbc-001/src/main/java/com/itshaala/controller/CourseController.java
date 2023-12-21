@@ -14,4 +14,12 @@ public class CourseController {
     public void addCourse(Course course){
         courseService.addCourse(course);
     }
+
+    public void updateCourse(Course course) {
+        courseService.updateCourse(course);
+    }
+
+    public void deleteCourseById(int courseId) {
+        courseService.deleteCourseById(courseId);
+    }
 }

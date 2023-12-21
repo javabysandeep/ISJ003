@@ -13,4 +13,12 @@ public class CourseService {
     public void addCourse(Course course) {
         courseDao.addCourse(course);
     }
+
+    public void updateCourse(Course course) {
+        courseDao.updateCourse(course);
+    }
+
+    public void deleteCourseById(int courseId) {
+        courseDao.deleteCourseById(courseId);
+    }
 }
