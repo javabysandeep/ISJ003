@@ -17,6 +17,7 @@ public class CourseDao {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
+
     public void addCourse(Course course) {
         saveDataUsingSpringJdbc(course);
     }

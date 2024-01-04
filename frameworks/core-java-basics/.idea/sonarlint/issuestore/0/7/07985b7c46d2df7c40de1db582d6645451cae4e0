@@ -1,0 +1,24 @@
+
+e
+java:S2259$"HA "NullPointerException" could be thrown; "connection" is nullable here.(ôêÂœ8‹¡¶÷Á1
+e
+java:S2259L"HA "NullPointerException" could be thrown; "connection" is nullable here.(ôêÂœ8¬øÛ÷Á1
+i
+java:S2095;"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ8­øÛ÷Á1
+q
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ8’Ú÷Á1
+a
+java:S2147 "DCombine this catch with the one at line 30, which has the same body.(É®£8³¡¶÷Á1
+S
+java:S6437"6Revoke and change this password, as it is compromised.(şÃÏ§8µ¡¶÷Á1
+E	java:S108")Either remove or fill this block of code.(ıàÑÎ8½¡¶÷Á1
+E	java:S108 ")Either remove or fill this block of code.(É®£8¾¡¶÷Á1
+E	java:S108%")Either remove or fill this block of code.(É®£8À¡¶÷Á1
+L	java:S106)"+Replace this use of System.out by a logger.(˜§“ıÿÿÿÿ8¯’Ú÷Á1
+a
+java:S2147H"DCombine this catch with the one at line 70, which has the same body.(É®£8ßøÛ÷Á1
+S
+java:S64379"6Revoke and change this password, as it is compromised.(şÃÏ§8áøÛ÷Á1
+E	java:S108F")Either remove or fill this block of code.(ıàÑÎ8èøÛ÷Á1
+E	java:S108H")Either remove or fill this block of code.(É®£8éøÛ÷Á1
+E	java:S108M")Either remove or fill this block of code.(É®£8ëøÛ÷Á1

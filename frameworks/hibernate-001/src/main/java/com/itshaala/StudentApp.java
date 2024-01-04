@@ -8,10 +8,10 @@ import com.itshaala.model.Student;
 public class StudentApp {
     public static void main(String[] args) {
         StudentController studentController = new StudentController();
-        Student student = Student.builder()
-                .studentName("Salman")
-                .studentAddress("Shrilanka")
-                .build();
-        studentController.addStudent(student);
+       /* Student studentToUpdate = Student.builder().studentId(2).studentName("Salman S")
+                .studentAddress("Pune West").
+                build();
+        studentController.deleteStudent(studentToUpdate);*/
+        System.out.println(studentController.getStudent(1));
     }
 }

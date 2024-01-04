@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -23,4 +24,9 @@ public class Course implements Serializable {
 
     @Column(name = "course_price")
     private int coursePrice;
+
+    @ElementCollection
+    @CollectionTable(name = "course_features_table")
+    @Column(name = "course_features")
+    private List<String> courseFeatures;
 }

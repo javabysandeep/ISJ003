@@ -10,13 +10,19 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class HibernateAppInsertObject {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
+        List<String> courseFeatures = new ArrayList<>();
+        courseFeatures.add("Live classes 100% ");
+        courseFeatures.add("Live code execution");
+        courseFeatures.add("Best in class notes");
         Course course = Course.builder()
-                .courseId(102)
-                .courseName("Python")
-                .coursePrice(99)
+                .courseName("Java Fullstack ")
+                .coursePrice(129)
+                .courseFeatures(courseFeatures)
                 .build();
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();

@@ -34,5 +34,6 @@ public class CourseDao {
         query.executeUpdate();
         transaction.commit();
         System.out.println("course deleted");
+
     }
 }

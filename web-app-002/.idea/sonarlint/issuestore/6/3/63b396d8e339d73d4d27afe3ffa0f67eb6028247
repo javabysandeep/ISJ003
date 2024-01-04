@@ -1,0 +1,12 @@
+
+g	java:S1122"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Õª†ÿ¶1
+g	java:S1124"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Öª†ÿ¶1
+L	java:S106"+Replace this use of System.out by a logger.(µî¿Ğúÿÿÿÿ8îª†ÿ¶1
+L	java:S106"+Replace this use of System.out by a logger.(òêúÿûÿÿÿÿ8ñª†ÿ¶1
+G	java:S106"+Replace this use of System.out by a logger.(ÄÊÊ½8÷ª†ÿ¶1
+a
+java:S21473"DCombine this catch with the one at line 49, which has the same body.(É®£8üª†ÿ¶1
+]	java:S125"<This block of commented-out lines of code should be removed.(êÂÕ ıÿÿÿÿ8Û³ÿ¶1
+X
+java:S6437$"6Revoke and change this password, as it is compromised.( éæ¶ıÿÿÿÿ8€«†ÿ¶1
+L	java:S1069"+Replace this use of System.out by a logger.(¶Å‚¿øÿÿÿÿ8•«†ÿ¶1
