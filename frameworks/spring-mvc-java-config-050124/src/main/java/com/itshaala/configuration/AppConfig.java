@@ -9,14 +9,14 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan(basePackages = {"com.itshaala"})
 @EnableWebMvc
-public class ViewResolverConfig extends WebMvcConfigurationSupport {
+@ComponentScan(basePackages = {"com.itshaala"})
+public class AppConfig extends WebMvcConfigurationSupport {
     @Bean
     public ViewResolver viewResolver() {
-        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-        viewResolver.setPrefix("/WEB-INF/view/");
-        viewResolver.setSuffix(".jsp");
-        return viewResolver;
+        InternalResourceViewResolver ivr = new InternalResourceViewResolver();
+        ivr.setPrefix("/WEB-INF/view/");
+        ivr.setSuffix(".jsp");
+        return ivr;
     }
 }
