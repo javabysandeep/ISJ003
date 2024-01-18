@@ -1,0 +1,145 @@
+Framework : it is a set of predefined code.
+- frameworks are nothing but solutions.
+
+
+Spring   :
+
+
+1. It is a  java based framework.
+2. It is open source developed by Pivotal team
+3.  it is light weight.
+4. Framework of framework
+5.  standalone, web, web services
+6.  presentation, business, data persistence 
+7.  Inversion of Control  is the feature
+8. Dependency Injection
+9.  steps to develop first spring core application
+   -1.   add the jars using maven
+  - 2. define the pojo class - [public, package, con - zero,  param con, setters]
+ -  3. provide configuration such class name, package name, field details for object creation
+    - xml way 
+   - java way
+   - annotation way [stereotypes annotation : @Component, @Controller, @RestController, @Service, @Repository ]
+- 4. Client App 
+   - get the application context : start the IOC and provide the input
+   -  get the bean by specifying type or name
+
+
+10. bean scopes - [singleton, prototype, request, session, global ] 
+
+
+
+
+Drawbacks of JDBC
+ 1. lot of code
+ 2. database specific queries  
+3. difficult for database migration
+4. connection opening, closing
+5. exception handling
+
+
+Spring JDBC :
+1. it is built on top of jdbc
+2. it was built to overcome the drawbacks of jdbc
+3. Spring JDBC provides JdbcTemplate
+4. steps to develop app using spring jdbc
+  1. add jars using maven
+  2. data source and jdbcTemplate configuration
+  - xml
+ - java way
+ 3. use jdbctemplate to execute the queries
+
+
+Hibernate 
+1. ORM - Object Relational Mapping
+2. object to table row and vice versa
+3. ORM is done for relational databases. [table has fix no. of columns for all of the rows]
+4. hibernate does
+  - automatic table creation
+ - automatic sql query generation
+- 
+
+
+5. steps to develop crud app using hibernate
+ 1. add jars, [mysql, hibernate, lombok]
+ 2. hibernate configuration
+  - xml way : provide url, username, password, driver class, hbm2ddl.auto[create, update, validate, create-drop]
+    - hibernate-configuration --> session-factory -->
+ 3. provide entity class [Pojo]
+  4. provide mapping between class -table, variable fields  -> table column
+      1. annotation way [@Entity, @Table, @Id, @Column]
+       2. xml [hibernate.mapping.xml]
+
+
+5. load xml file into Configuration object
+6. using configuration build SessionFactory
+7. using SessionFactory create session
+8. using session create transaction for non-select queries
+9. perform the operation [save, update, delete, get, query]
+10. if transaction is there, commit it
+
+
+6. how inheritance works in hibernate? 
+7. different inheritance strategies : Single table strategy, Table per class, table per subclass
+8. HQL - perform operations bulk objects
+9. cache - first level and second level cache , cache evection, stale cache, write through, write back
+10 . CRUD - 
+
+
+
+
+MVC : it is a design pattern. it states that application code should be divided into three layers
+- Model layer or data layer - 
+- View or presentation layer --> HTMl/CSS/JSP
+- Controller layer or business layer ---> Servlet
+- to have a separation of concern.
+
+
+Spring MVC :
+ - it is a MVC based framework provided by spring team [Pivotal team]
+- using Spring MVC, we can develop web applications, web services in a faster way
+- MVC stands for Model, View ,  Controller
+- How Spring MVC works ? what is the architecture of Spring MVC
+  - DispatcherServlet --> HandlerMap --> Controller --> ModelAndView ---> ViewResolver--> View
+
+
+- steps to develop spring mvc app?
+1. add the jars [web mvc, servlet, lombok]
+2. configure DispatcherServlet [web.xml, java way]
+3. configure ViewResolver [spring config.xml - bean definition] [java way] [prefix, suffix]
+4.  controller class [@Annotate the class with @Controller]
+5. provide handler method [annotate the method with @RequestMapping, url] and return ModelAndView
+6. Provide view and add the model on the view
+7.  access the app using web client
+
+
+- how to read input at controller from view?
+   -  form data [@ModelAttribute]
+  - @Requestparam. to read query parameters [?un=val&pw=val]
+ - @PathVariable [/101]
+
+
+- how to send output data to view from controller
+ - provide data in ModelAndView object
+
+
+
+
+
+
+Spring Boot 
+------------------------------------
+-  it is a java based framework which is used to develop spring based applications in a faster way.
+- Spring boot provides
+  - starter dependency template
+  - auto-configuration 
+ - embedded servers [ tomcat, jetty, jboss]
+ - embedded databases [h2, HSQLDB, Derby] [in memory]
+- actuators 
+- application.properties
+   - Properties
+   - Environment
+    - @Value
+    - @ConfigValue()
+
+- CommandLineRunner
